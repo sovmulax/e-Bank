@@ -19,11 +19,11 @@
   <body>
     <nav class="light-blue darken-4 sze">
       <div class="nav-wrapper ps-nav">
-        <a href="index.html" class="brand-logo ps-titles ps-logo"
+        <a href="index.html" class="brand-logo ps-titles"
           >Virtual Bank</a
         >
         <a href="#" data-target="mobile-menu" class="sidenav-trigger"
-          ><i class="material-icons ps-title">menu</i></a
+          ><i class="material-icons">menu</i></a
         >
         <ul class="right hide-on-med-and-down">
           <li>
@@ -64,10 +64,32 @@
         >
       </li>
     </ul>
+    <div class="row">
+      <div class="col l3 m2 cyan lighten-5"></div>
+      <div class="col l6 m8 s12 white">
+        <div class="form-title">
+          <h2 class="center-align">Guichet</h2>
+        </div>
+        <form action="#" class="form-style center-align">
+          <label for="code">Numéro de Carte Bancaire</label>
+          <input
+            type="text"
+            name="carte"
+            placeholder="xxxx xxxx xxxx xxxx"
+            id="code"
+          /><br />
+          <input type="number" name="cvv" placeholder="Code CVV" /><br />
+          <input type="number" name="code" placeholder="Code Secret" /><br />
+          <button type="submit" class="btn button">Envoyez</button>
+        </form>
+      </div>
+      <div class="col l3 m2 cyan lighten-5"></div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
       $(document).ready(function () {
         $(".sidenav").sidenav();
+        $("select").formSelect();
       });
     </script>
   </body>

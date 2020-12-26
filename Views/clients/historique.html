@@ -19,11 +19,11 @@
   <body class="cyan lighten-5">
     <nav class="light-blue darken-4 sze">
       <div class="nav-wrapper ps-nav">
-        <a href="index.html" class="brand-logo ps-titles ps-logo"
+        <a href="index.html" class="brand-logo ps-titles"
           >Virtual Bank</a
         >
         <a href="#" class="sidenav-trigger" data-target="mobile-menu"
-          ><i class="material-icons ps-title">menu</i></a
+          ><i class="material-icons">menu</i></a
         >
         <ul class="right hide-on-med-and-down">
           <li>
@@ -64,12 +64,153 @@
         >
       </li>
     </ul>
-    <div class="container white"></div>
+    <div class="row white">
+      <div class="col l2"></div>
+      <div class="col l8 m12 s12">
+        <div class= "white center-align">
+          <form>
+            <label>
+              <input
+                type="checkbox"
+                name="check"
+                class="filled-in"
+                id="retrait"
+                onclick="cacher()"
+              />
+              <span class="mx1">Retrait</span>
+            </label>
+            <label>
+              <input type="checkbox" name="check" class="filled-in" id="envoie" onclick="cacher0()"/>
+              <span class="mx1">Envoie</span>
+            </label>
+            <label>
+              <input type="checkbox" name="check" class="filled-in" id="depot" onclick="cacher1()"/>
+              <span class="mx1">Depot</span>
+            </label>
+          </form>
+        </div>
+        <div class="divider"></div>
+        <div class="container">
+          <div class="row">
+            <!--Retrait-->
+            <div class="col my" id="l1" style="display: none;">
+              <table class="centered">
+                <thead class="light-blue darken-4">
+                  <tr>
+                    <th>N°</th>
+                    <th>Montant du Retrait</th>
+                    <th>Montant Restant</th>
+                    <th>Mode de Retrait</th>
+                  </tr>
+                </thead>
+                <tbody class="blue-grey lighten-5">
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!--Dépôt-->
+            <div class="col my" id="l3" style="display: none;">
+              <table class="centered">
+                <thead class="light-blue darken-4">
+                  <tr>
+                    <th>N°</th>
+                    <th>Montant du Dépôt</th>
+                    <th>Ancien Solde</th>
+                    <th>Nouveau Solde</th>
+                  </tr>
+                </thead>
+                <tbody class="blue-grey lighten-5">
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!--Envoie-->
+            <div class="col my" id="l2" style="display: none;">
+              <table class="centered">
+                <thead class="light-blue darken-4">
+                  <tr>
+                    <th>N°</th>
+                    <th>Montant de Envoyer</th>
+                    <th>Ancien Solde</th>
+                    <th>Nouveau Solde</th>
+                  </tr>
+                </thead>
+                <tbody class="blue-grey lighten-5">
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col l2"></div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
       $(document).ready(function () {
         $(".sidenav").sidenav();
       });
+    </script>
+    <script>
+      function cacher() {
+        let licence1 = document.getElementById("l1");
+        let licence2 = document.getElementById("l2");
+        let licence3 = document.getElementById("l3");
+        //
+        let l1 = document.getElementById("retrait");
+        let l2 = document.getElementById("envoie");
+        let l3 = document.getElementById("depot");
+
+        //
+        l1.onClick = licence1.style.display = "block";
+        l2.onClick = licence2.style.display = "none";
+        l3.onClick = licence3.style.display = "none";
+      }
+
+      function cacher0() {
+        let licence2 = document.getElementById("l2");
+        let licence1 = document.getElementById("l1");
+        let licence3 = document.getElementById("l3");
+        //
+        let l1 = document.getElementById("retrait");
+        let l2 = document.getElementById("envoie");
+        let l3 = document.getElementById("depot");
+        //
+
+        l1.onClick = licence1.style.display = "none";
+        l2.onClick = licence2.style.display = "block";
+        l3.onClick = licence3.style.display = "none";
+      }
+
+      function cacher1() {
+        let licence3 = document.getElementById("l3");
+        let licence2 = document.getElementById("l2");
+        let licence1 = document.getElementById("l1");
+        //
+        let l1 = document.getElementById("retrait");
+        let l2 = document.getElementById("envoie");
+        let l3 = document.getElementById("depot");
+        //
+
+        l1.onClick = licence1.style.display = "none";
+        l2.onClick = licence2.style.display = "none";
+        l3.onClick = licence3.style.display = "block";
+      }
     </script>
   </body>
 </html>

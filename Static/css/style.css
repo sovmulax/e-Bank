@@ -92,9 +92,6 @@ nav {
   font-weight: 600;
 }
 
-.ps-profile {
-  margin-top: 3rem;
-}
 
 .img-profile {
   height: 15rem;
@@ -123,7 +120,28 @@ table, th, tr, td, thead{
   color: #9e9e9e;
 }
 
+.mx1{
+  margin: 1rem !important;
+}
+
+.blues{
+  color: #0079df !important;
+}
+
+.my{
+  width: 100% !important;
+}
+
 /* Média query */
+@media (max-width: 350px) {
+  .mx1 {
+    font-size: 1em !important;
+  }
+
+  input[name="check"] {
+    font-size: 0.7em !important;
+  }
+}
 
 @media (max-width: 400px) {
   .ps-titles {
