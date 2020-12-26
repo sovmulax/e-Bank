@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Espace Client | Virtual Bank</title>
+    <link rel="stylesheet" href="../../Static/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../../Static/materialize/css/materialize.min.css"
+    />
+    <script src="../../Static/materialize/js/materialize.min.js"></script>
+    <script src="../../Static/materialize/js/jquery-3.5.1.js"></script>
+  </head>
+  <body>
+    <nav class="light-blue darken-4 sze">
+      <div class="nav-wrapper ps-nav">
+        <a href="index.html" class="brand-logo ps-titles ps-logo">Virtual Bank</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu"
+          ><i class="material-icons ps-title">menu</i></a
+        >
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html" class="waves-effect waves-light sz">Compte</a></li>
+          <li class="active"><a href="historique.html" class="waves-effect waves-light sz">Historique</a></li>
+          <li><a href="transaction.html" class="waves-effect waves-light sz">Transaction</a></li>
+        </ul>
+      </div>
+    </nav>
+    <ul class="sidenav" id="mobile-menu">
+      <li>
+        <div class="user-view">
+          <h3>Virtual Bank</h3>
+        </div>
+      </li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Menu</a></li>
+      <li class="active">
+        <a href="index.html" class="waves-effect waves-blue sz">Compte</a>
+      </li>
+      <li>
+        <a href="historique.html" class="waves-effect waves-blue sz"
+          >Historique</a
+        >
+      </li>
+      <li>
+        <a href="transaction.html" class="waves-effect waves-blue sz"
+          >Transaction</a
+        >
+      </li>
+    </ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+      });
+    </script>
+  </body>
+</html>

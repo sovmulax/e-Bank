@@ -1,0 +1,6 @@
+couleur de depart => #0079df
+dégrader du blanc => #c3d6ee ; #acc9e8
+couleur de bouton => #0056b8
+couleur footer => #051923
+couleur ecriture => #fff
+bouton carré

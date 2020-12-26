@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Espace Client | Virtual Bank</title>
+    <link rel="stylesheet" href="../../Static/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../../Static/materialize/css/materialize.min.css "
+    />
+    <script src="../../Static/materialize/js/materialize.min.js"></script>
+    <script src="../../Static/materialize/js/jquery-3.5.1.js"></script>
+  </head>
+  <body class="light-blue lighten-5">
+    <div>
+      <nav class="light-blue darken-4 sze">
+        <div class="nav-wrapper ps-nav">
+          <a href="index.html" class="brand-logo ps-titles">Virtual Bank</a>
+          <a href="#" class="sidenav-trigger" data-target="mobile-menu"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul class="right hide-on-med-and-down">
+            <li class="active">
+              <a href="index.html" class="waves-effect waves-blue sz">Compte</a>
+            </li>
+            <li>
+              <a href="historique.html" class="waves-effect waves-blue sz"
+                >Historique</a
+              >
+            </li>
+            <li>
+              <a href="transaction.html" class="waves-effect waves-blue sz"
+                >Transaction</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <ul class="sidenav" id="mobile-menu">
+      <li>
+        <div class="user-view">
+          <h3>Virtual Bank</h3>
+        </div>
+      </li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Menu</a></li>
+      <li class="active">
+        <a href="index.html" class="waves-effect waves-blue sz">Compte</a>
+      </li>
+      <li>
+        <a href="historique.html" class="waves-effect waves-blue sz"
+          >Historique</a
+        >
+      </li>
+      <li>
+        <a href="transaction.html" class="waves-effect waves-blue sz"
+          >Transaction</a
+        >
+      </li>
+    </ul>
+    <div class="container white ps-profile">
+      <div class="row">
+        <div class="col s12 center-align">
+          <img
+            src="../../Static/images/clients/img_avatar.png"
+            alt="Photo du client"
+            class="img-profile"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <h5>Information Personnel</h5>
+        <div class="divider"></div>
+        <div class="col l2 m2"></div>
+        <div class="col s12 m8 center-align">
+          <p>
+            <span class="ps-info">Nom :</span><br />
+            <span class="ps-info">Prénom :</span><br />
+            <span class="ps-info">Date de Naissance :</span><br />
+            <span class="ps-info">Adresse Postal :</span><br />
+          </p>
+        </div>
+        <div class="col l2 m2"></div>
+      </div>
+      <div class="row">
+        <h5>Information Générale</h5>
+        <div class="divider"></div>
+        <div class="col l2 m2"></div>
+        <div class="col s12 m8 center-align">
+          <p>
+            <span class="ps-info">Solde :</span><br />
+            <span class="ps-info">code Personnel:</span><br />
+            <span class="ps-info">Numero de carte Bancaire :</span><br />
+            <span class="ps-info">CVV :</span><br />
+          </p>
+        </div>
+        <div class="col l2 m2"></div>
+      </div>
+      <div class="row">
+        <h5>Relevé d'indentité Bancaire</h5>
+        <div class="divider"></div>
+        <div class="col l12 m12 s12">
+          <div class="center-align">
+            <table class="centered">
+              <thead class="light-blue darken-4">
+                <tr>
+                  <th>Code Banque</th>
+                  <th>Code Guichet</th>
+                  <th>Numéro de Compte</th>
+                  <th >Clé RIB</th>
+                  <th >Domiciliation</th>
+                </tr>
+              </thead>
+              <tbody class="#e3f2fd blue lighten-5">
+                <tr>
+                  <td>C1042</td>
+                  <td>01219</td>
+                  <td>062275202401</td>
+                  <td>44</td>
+                  <td>Treichville Marché</td>
+                </tr>
+                <tr>
+                  <td colspan="4" class="left-align">
+                    <span class="ps-title">IBAN :</span> C193 C104 2012 1806 2257 2024 0144
+                  </td>
+                  <td class="right-align"><span class="ps-title">SWIFT :</span> BIAOCIABXXX</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h6 class="ps-title">Adresse</h6>
+          <br />
+          <p>
+            MONSIEUR METHODE DU WEB <br />
+            01 BP 1274 ABIDJAN 01 <br />
+            ABIDJAN
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+      });
+    </script>
+  </body>
+</html>
