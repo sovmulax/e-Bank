@@ -17,15 +17,48 @@
   color: white !important;
 }
 
-input {
+input[name="code"] {
   border: transparent;
-  border-bottom: 1px solid #0079df !important;
+  border-bottom: 1px solid #01579b !important;
   margin: 0.5rem !important;
   border-radius: 0.3rem !important;
 }
 
-input:focus {
-  border-bottom: 3px solid #0079df !important;
+input[name="carte"] {
+  border: transparent;
+  border-bottom: 1px solid #01579b !important;
+  margin: 0.5rem !important;
+  border-radius: 0.3rem !important;
+}
+
+input[name="montant"] {
+  border: transparent;
+  border-bottom: 1px solid #01579b !important;
+  margin: 0.5rem !important;
+  border-radius: 0.3rem !important;
+}
+
+input[name="cvv"] {
+  border: transparent;
+  border-bottom: 1px solid #01579b !important;
+  margin: 0.5rem !important;
+  border-radius: 0.3rem !important;
+}
+
+input[name="code"]:focus {
+  border-bottom: 3px solid #01579b !important;
+}
+
+input[name="cvv"]:focus {
+  border-bottom: 3px solid #01579b !important;
+}
+
+input[name="carte"]:focus {
+  border-bottom: 3px solid #01579b !important;
+}
+
+input[name="montant"]:focus {
+  border-bottom: 3px solid #01579b !important;
 }
 
 .button {
@@ -66,14 +99,12 @@ input:focus {
 }
 
 .form-title {
-  background-color: #0079df;
   border-radius: 12px 12px 0 0;
   padding: 1rem;
   margin-top: 2rem;
 }
 
 .buttons {
-  background-color: #0079df !important;
   font-weight: 800 !important;
   padding: 0.6rem !important;
 }
@@ -92,7 +123,6 @@ nav {
   font-weight: 600;
 }
 
-
 .img-profile {
   height: 15rem;
   width: 15rem;
@@ -106,30 +136,53 @@ nav {
   margin-top: 1.5rem !important;
 }
 
-.m1{
+.m1 {
   margin-bottom: 1rem;
 }
 
-table, th, tr, td, thead{
+table,
+th,
+tr,
+td,
+thead {
   border-collapse: collapse !important;
 }
 
-.titre{
+.titre {
   font-style: italic;
   font-size: small;
   color: #9e9e9e;
 }
 
-.mx1{
+.mx1 {
   margin: 1rem !important;
 }
 
-.blues{
+.blues {
   color: #0079df !important;
 }
 
-.my{
+.my {
   width: 100% !important;
+}
+
+.ps-centre {
+  font-size: xx-large;
+  font-weight: 800;
+}
+
+.ps-form {
+  padding: 1rem !important;
+}
+
+.ps-marge {
+  margin-top: 2rem !important;
+}
+
+.hoverables {
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Média query */
@@ -153,7 +206,16 @@ table, th, tr, td, thead{
 
 @media (max-width: 600px) {
   th {
-
     font-size: 0.8em !important;
+  }
+
+  .ps-back {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .ps-back {
+    display: none;
   }
 }
