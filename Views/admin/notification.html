@@ -16,7 +16,7 @@
     <script src="../../Static/materialize/js/materialize.min.js"></script>
     <script src="../../Static/materialize/js/jquery-3.5.1.js"></script>
   </head>
-  <body class="cyan lighten-5">
+  <body>
     <div>
       <nav class="light-blue darken-4 sze">
         <div class="nav-wrapper ps-nav">
@@ -25,10 +25,12 @@
             ><i class="material-icons">menu</i></a
           >
           <ul class="right hide-on-med-and-down">
-            <li class="active">
-              <a href="index.html" class="waves-effect waves-blue sz">Liste des Clients</a>
-            </li>
             <li>
+              <a href="index.html" class="waves-effect waves-blue sz"
+                >Liste des Clients</a
+              >
+            </li>
+            <li class="active">
               <a href="notification.html" class="waves-effect waves-blue sz"
                 >Notifications par Client</a
               >
@@ -36,6 +38,11 @@
             <li>
               <a href="depot.html" class="waves-effect waves-blue sz"
                 >Dépôt d'argent</a
+              >
+            </li>
+            <li>
+              <a href="ajout.html" class="waves-effect waves-blue sz"
+                >Ajout de Client</a
               >
             </li>
           </ul>
@@ -50,21 +57,34 @@
       </li>
       <li><div class="divider"></div></li>
       <li><a class="subheader">Menu</a></li>
-      <li class="active">
-        <a href="index.html" class="waves-effect waves-blue sz">Liste des Clients</a>
-      </li>
       <li>
-        <a href="historique.html" class="waves-effect waves-blue sz"
+        <a href="index.html" class="waves-effect waves-blue sz"
+          >Liste des Clients</a
+        >
+      </li>
+      <li class="active">
+        <a href="notification.html" class="waves-effect waves-blue sz"
           >Notifications par Client</a
         >
       </li>
       <li>
-        <a href="transaction.html" class="waves-effect waves-blue sz"
+        <a href="depot.html" class="waves-effect waves-blue sz"
           >Dépôt d'argent</a
         >
       </li>
+      <li>
+        <a href="ajout.html" class="waves-effect waves-blue sz"
+          >Ajout de Client</a
+        >
+      </li>
     </ul>
-    
+    <div class="container">
+      <div class="row">
+        <div class="col xl"></div>
+        <div class="col xl"></div>
+        <div class="col xl"></div>
+      </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
       $(document).ready(function () {

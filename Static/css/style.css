@@ -3,9 +3,8 @@
   padding: 0;
 }
 
-.ps-title {
-  font-weight: 700;
-  color: black !important;
+body{
+  background-color: #f5fcff;
 }
 
 .ps-titles {
