@@ -78,17 +78,76 @@
         >
       </li>
     </ul>
+    <div class="center-align">
+      <h1>Envoie de notification</h1>
+    </div>
+    <div class="divider"></div>
     <div class="container">
       <div class="row">
-        <div class="col xl"></div>
-        <div class="col xl"></div>
-        <div class="col xl"></div>
+        <div class="col xl1 l1 m1"></div>
+        <div class="col xl10 l10 m10 s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="idSearch" type="email" class="validate" />
+              <label for="idSearch">Rechercher</label>
+            </div>
+          </div>
+          <ul class="collapsible" id="clients">
+            <li class="pop">
+              <div class="collapsible-header">
+                <p class="colors">EVANE</p>
+                <span class="new badge light-blue darken-4">1</span>
+              </div>
+              <div class="collapsible-body">
+                <p>
+                  Vous avez éffectuer un retrait de 10.000 fcfa <br />
+                  Solde restant : 40000 fcfa
+                </p>
+                <br />
+                <a href="#!" class="btn">Envoyer</a>
+              </div>
+            </li>
+            <li class="pop">
+              <div class="collapsible-header">
+                <p class="colors">GEOFFROY</p>
+                <span class="new badge light-blue darken-4">1</span>
+              </div>
+              <div class="collapsible-body">
+                <p>
+                  Vous avez éffectuer un retrait de 10.000 fcfa <br />
+                  Solde restant : 40000 fcfa
+                </p>
+                <br />
+                <a href="#!" class="btn">Envoyer</a>
+              </div>
+            </li>
+            <li class="pop">
+              <div class="collapsible-header">
+                <p class="colors">SOUMAILA</p>
+                <span class="new badge light-blue darken-4">0</span>
+              </div>
+              <div class="collapsible-body"></div>
+            </li>
+          </ul>
+        </div>
+        <div class="col xl1 l1 m1"></div>
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
       $(document).ready(function () {
         $(".sidenav").sidenav();
+        $(".collapsible").collapsible();
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#idSearch").on("keyup", function () {
+          var value = $(this).val().toLowerCase();
+          $("#clients .pop").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+          });
+        });
       });
     </script>
   </body>

@@ -78,18 +78,95 @@
         >
       </li>
     </ul>
-    <div class="container">
-      <div class="row">
-        <div class="col xl"></div>
-        <div class="col xl"></div>
-        <div class="col xl"></div>
-      </div>
+    <div class="center-align">
+      <h1>Liste des Clients</h1>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".sidenav").sidenav();
-      });
-    </script>
+    <div class="divider"></div>
+    <div class="row">
+      <div class="col xl1 l1 "></div>
+      <div class="col xl10 l10 m12 s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="idSearch" type="email" class="validate">
+            <label for="idSearch">Rechercher</label>
+          </div>
+        </div>
+        <div class="inline" id="clients">
+          <div class="col card ps-petit hoverable">
+            <div class="card-image">
+              <img src="../../Static/images/clients/img_avatar.png" />
+              <span class="card-title colors flow-text">ref</span>
+              <a
+                class="btn-floating halfway-fab waves-effect waves-light light-blue darken-4"
+                ><i class="material-icons">add</i></a
+              >
+            </div>
+            <div class="card-content ps-pad">
+              <h6>Plan jeunesse</h6>
+              <p>Solde : 10 000 000 000 000 XOF</p>
+            </div>
+          </div>
+          <div class="col card ps-petit hoverable">
+            <div class="card-image">
+              <img src="../../Static/images/clients/img_avatar.png" />
+              <span class="card-title colors flow-text"> EVANE</span>
+              <a
+                class="btn-floating halfway-fab waves-effect waves-light light-blue darken-4"
+                ><i class="material-icons">add</i></a
+              >
+            </div>
+            <div class="card-content ps-pad">
+              <h6>Plan jeunesse</h6>
+              <p>Solde : 10 000 000 000 000 XOF</p>
+            </div>
+          </div>
+          <div class="col card ps-petit hoverable">
+            <div class="card-image">
+              <img src="../../Static/images/clients/img_avatar.png" />
+              <h5 class="card-title colors flow-text"> GEOFFROY </h5>
+              <a
+                class="btn-floating halfway-fab waves-effect waves-light light-blue darken-4"
+                ><i class="material-icons">add</i></a
+              >
+            </div>
+            <div class="card-content ps-pad">
+              <h6>Plan jeunesse</h6>
+              <p>Solde : 10 000 000 000 000 XOF</p>
+            </div>
+          </div>
+          <div class="col card ps-petit hoverable">
+            <div class="card-image">
+              <img src="../../Static/images/clients/img_avatar.png" />
+              <span class="card-title colors flow-text">SOUMAILA </span>
+              <a
+                class="btn-floating halfway-fab waves-effect waves-light light-blue darken-4"
+                ><i class="material-icons">add</i></a
+              >
+            </div>
+            <div class="col card-content ps-pad">
+              <h6>Plan jeunesse</h6>
+              <p>Solde : 10 000 000 000 000 XOF</p>
+            </div>
+          </div>
+        </div>
+        <div class="col xl1 l1"></div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $(".sidenav").sidenav();
+        });
+      </script>
+      <script>
+        $(document).ready(function(){
+           $("#idSearch").on("keyup", function() {
+              var value = $(this).val().toLowerCase();
+              $("#clients .col").filter(function() {
+                 $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+              });
+           });
+        });
+     </script>
+    </div>
   </body>
 </html>

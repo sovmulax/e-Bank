@@ -78,18 +78,139 @@
         >
       </li>
     </ul>
+    <div class="center-align">
+      <h1>Bordereau de Versement</h1>
+    </div>
+    <div class="divider"></div>
+    <p class="center mx1">
+      <label>
+        <input class="with-gap" name="group1" type="radio" id="depot" onclick="cacher()"/>
+        <span>Depôt sur un Compte</span>
+      </label>
+      <label>
+        <input class="with-gap" name="group1" type="radio" id="transact" onclick="cacher0()"/>
+        <span>Transfert Compte à Compte</span>
+      </label>
+    </p>
     <div class="container">
       <div class="row">
-        <div class="col xl"></div>
-        <div class="col xl"></div>
-        <div class="col xl"></div>
+        <div class="col xl1 l1 m1"></div>
+        <div class="col xl10 l10 m10 s12">
+          <div class="row">
+            <form action="#" method="post" id="dep1" style="display: none;">
+              <div class="input-field col xl6 l6 m6 s12">
+                <input id="last_name" type="text" class="validate" />
+                <label for="last_name">Nom</label>
+              </div>
+              <div class="input-field col xl6 l6 m6 s12">
+                <input id="last_name" type="text" class="validate" />
+                <label for="last_name">Prénom</label>
+              </div>
+              <div class="input-field col s12">
+                <input
+                  id="last_name"
+                  type="number"
+                  class="validate"
+                  placeholder="xxxxx xxxxx xxxxx xxxxx xxxxx"
+                />
+                <label for="last_name">Numéro du Compte Reçevant</label>
+              </div>
+              <div class="input-field col l6 s12">
+                <input
+                  type="text"
+                  class="datepicker"
+                  placeholder="Date de dépôt"
+                />
+              </div>
+              <div class="input-field col l6 s12">
+                <select>
+                  <option value="" disabled selected>
+                    Selectionnez une option
+                  </option>
+                  <option value="1">Option 1</option>
+                </select>
+                <label>Domiciliation du compte</label>
+              </div>
+            </form>
+            <form action="#" method="post" id="dep2" style="display: none;">
+              <div class="input-field col xl6 l6 m6 s12">
+                <input id="last_name" type="text" class="validate" />
+                <label for="last_name">Nom</label>
+              </div>
+              <div class="input-field col xl6 l6 m6 s12">
+                <input id="last_name" type="text" class="validate" />
+                <label for="last_name">Prénom</label>
+              </div>
+              <div class="input-field col s12">
+                <input
+                  id="last_name"
+                  type="number"
+                  class="validate"
+                  placeholder="xxxxx xxxxx xxxxx xxxxx xxxxx"
+                />
+                <label for="last_name">Numéro du Compte à Débiter</label>
+              </div>
+              <div class="input-field col s12">
+                <input
+                  id="last_name"
+                  type="number"
+                  class="validate"
+                  placeholder="xxxxx xxxxx xxxxx xxxxx xxxxx"
+                />
+                <label for="last_name">Numéro du Compte Reçevant</label>
+              </div>
+              <div class="input-field col l6 s12">
+                <input
+                  type="text"
+                  class="datepicker"
+                  placeholder="Date de dépôt"
+                />
+              </div>
+              <div class="input-field col l6 s12">
+                <select>
+                  <option value="" disabled selected>
+                    Selectionnez une option
+                  </option>
+                  <option value="1">Option 1</option>
+                </select>
+                <label>Domiciliation du compte à Débiter</label>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col xl1 l1 m1"></div>
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
       $(document).ready(function () {
         $(".sidenav").sidenav();
+        $("select").formSelect();
+        $(".datepicker").datepicker();
       });
+      function cacher() {
+        let licence1 = document.getElementById("dep1");
+        let licence2 = document.getElementById("dep2");
+        //
+        let l1 = document.getElementById("depot");
+        let l2 = document.getElementById("transact");
+
+        //
+        l1.onClick = licence1.style.display = "block";
+        l2.onClick = licence2.style.display = "none";
+      }
+
+      function cacher0() {
+        let licence2 = document.getElementById("dep2");
+        let licence1 = document.getElementById("dep1");
+        //
+        let l1 = document.getElementById("depot");
+        let l2 = document.getElementById("transact");
+        //
+
+        l1.onClick = licence1.style.display = "none";
+        l2.onClick = licence2.style.display = "block";
+      }
     </script>
   </body>
 </html>

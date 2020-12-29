@@ -184,6 +184,36 @@ thead {
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.ps-petit{
+  height: 25rem;
+  width: 16rem;
+  margin: 1rem !important;
+}
+
+.colors{
+  color: #000 !important;
+  font-weight: 600 !important;
+}
+
+.ps-pad{
+  padding: 5% !important;
+}
+
+.inline{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.input-field label {
+  color: #000 !important;
+}
+
+.input-field:focus {
+  border-bottom: 1px solid #000 !important;
+  box-shadow: 0 1px 0 0 #000 !important;
+}
+
 /* Média query */
 @media (max-width: 350px) {
   .mx1 {
