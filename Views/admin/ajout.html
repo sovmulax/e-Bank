@@ -78,18 +78,82 @@
         >
       </li>
     </ul>
+    <div class="center-align">
+      <h1>Ajout de Clients</h1>
+    </div>
+    <div class="divider"></div>
     <div class="container">
-        <div class="row">
-          <div class="col xl"></div>
-          <div class="col xl"></div>
-          <div class="col xl"></div>
+      <div class="row">
+        <div class="col xl1 l1 m1"></div>
+        <div class="col xl10 l10 m10 s12">
+          <div class="row">
+            <form
+              action="#"
+              method="post"
+              class="center-align"
+            >
+              <div class="input-field col xl6 l6 m6 s12">
+                <input id="nom" type="text" class="validate" />
+                <label for="nom">Nom</label>
+              </div>
+              <div class="input-field col xl6 l6 m6 s12">
+                <input id="prenom" type="text" class="validate" />
+                <label for="prenom">Prénom</label>
+              </div>
+              <div class="input-field col s12">
+                <input
+                  id="numero"
+                  type="number"
+                  class="validate"
+                  placeholder="xxxxx xxxxx xxxxx xxxxx xxxxx"
+                />
+                <label for="numero">Numéro du Compte à Débiter</label>
+              </div>
+              <div class="input-field col l6 s12">
+                <input
+                  type="text"
+                  class="datepicker"
+                  placeholder="Date de dépôt"
+                />
+              </div>
+              <div class="input-field col l6 s12">
+                <select name="domicile">
+                  <option value="" disabled selected>
+                    Selectionnez une option
+                  </option>
+                  <option value="1">Option 1</option>
+                </select>
+                <label>Domiciliation du compte à Débiter</label>
+              </div>
+              <div class="input-field col s12">
+                <input
+                  id="montant"
+                  type="number"
+                  class="validate"
+                  placeholder="xxxxx xxxxx xxxxx xxxxx xxxxx"
+                />
+                <label for="montant">Montant à Débiter</label>
+              </div>
+              <br />
+              <button
+                type="submit"
+                class="btn light-blue darken-4"
+                name="submit"
+              >
+                Normaliser
+              </button>
+            </form>
+          </div>
         </div>
+        <div class="col xl1 l1 m1"></div>
       </div>
-    
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
       $(document).ready(function () {
         $(".sidenav").sidenav();
+        $("select").formSelect();
+        $(".datepicker").datepicker();
       });
     </script>
   </body>

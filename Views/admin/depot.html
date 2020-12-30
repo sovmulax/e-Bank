@@ -84,11 +84,23 @@
     <div class="divider"></div>
     <p class="center mx1">
       <label>
-        <input class="with-gap" name="group1" type="radio" id="depot" onclick="cacher()"/>
+        <input
+          class="with-gap light-blue darken-4"
+          name="group1"
+          type="radio"
+          id="depot"
+          onclick="cacher()"
+        />
         <span>Depôt sur un Compte</span>
       </label>
       <label>
-        <input class="with-gap" name="group1" type="radio" id="transact" onclick="cacher0()"/>
+        <input
+          class="with-gap light-blue darken-4"
+          name="group1"
+          type="radio"
+          id="transact"
+          onclick="cacher0()"
+        />
         <span>Transfert Compte à Compte</span>
       </label>
     </p>
@@ -97,7 +109,7 @@
         <div class="col xl1 l1 m1"></div>
         <div class="col xl10 l10 m10 s12">
           <div class="row">
-            <form action="#" method="post" id="dep1" style="display: none;">
+            <form action="#" method="post" id="dep1" style="display: none" class="center-align">
               <div class="input-field col xl6 l6 m6 s12">
                 <input id="last_name" type="text" class="validate" />
                 <label for="last_name">Nom</label>
@@ -131,33 +143,46 @@
                 </select>
                 <label>Domiciliation du compte</label>
               </div>
+              <div class="input-field col s12">
+                <input
+                  id="last_name"
+                  type="number"
+                  class="validate"
+                  placeholder="xxxxx xxxxx xxxxx xxxxx xxxxx"
+                />
+                <label for="last_name">Montant à Déposer</label>
+              </div>
+              <br />
+              <button type="submit" class="btn light-blue darken-4" name="submit">
+                Normaliser
+              </button>
             </form>
-            <form action="#" method="post" id="dep2" style="display: none;">
+            <form action="#" method="post" id="dep2" style="display: none" class="center-align">
               <div class="input-field col xl6 l6 m6 s12">
-                <input id="last_name" type="text" class="validate" />
-                <label for="last_name">Nom</label>
+                <input id="nom" type="text" class="validate" />
+                <label for="nom">Nom</label>
               </div>
               <div class="input-field col xl6 l6 m6 s12">
-                <input id="last_name" type="text" class="validate" />
-                <label for="last_name">Prénom</label>
+                <input id="prenom" type="text" class="validate" />
+                <label for="prenom">Prénom</label>
               </div>
               <div class="input-field col s12">
                 <input
-                  id="last_name"
+                  id="numero"
                   type="number"
                   class="validate"
                   placeholder="xxxxx xxxxx xxxxx xxxxx xxxxx"
                 />
-                <label for="last_name">Numéro du Compte à Débiter</label>
+                <label for="numero">Numéro du Compte à Débiter</label>
               </div>
               <div class="input-field col s12">
                 <input
-                  id="last_name"
+                  id="recevant"
                   type="number"
                   class="validate"
                   placeholder="xxxxx xxxxx xxxxx xxxxx xxxxx"
                 />
-                <label for="last_name">Numéro du Compte Reçevant</label>
+                <label for="recevant">Numéro du Compte Reçevant</label>
               </div>
               <div class="input-field col l6 s12">
                 <input
@@ -167,7 +192,7 @@
                 />
               </div>
               <div class="input-field col l6 s12">
-                <select>
+                <select name="domicile">
                   <option value="" disabled selected>
                     Selectionnez une option
                   </option>
@@ -175,6 +200,19 @@
                 </select>
                 <label>Domiciliation du compte à Débiter</label>
               </div>
+              <div class="input-field col s12">
+                <input
+                  id="montant"
+                  type="number"
+                  class="validate"
+                  placeholder="xxxxx xxxxx xxxxx xxxxx xxxxx"
+                />
+                <label for="montant">Montant à Débiter</label>
+              </div>
+              <br />
+              <button type="submit" class="btn light-blue darken-4" name="submit">
+                Normaliser
+              </button>
             </form>
           </div>
         </div>
