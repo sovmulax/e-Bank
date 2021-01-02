@@ -41,7 +41,7 @@
               >
             </li>
             <li>
-              <a href="ajout.html" class="waves-effect waves-blue sz"
+              <a href="add/step1.html" class="waves-effect waves-blue sz"
                 >Ajout de Client</a
               >
             </li>
@@ -73,7 +73,7 @@
         >
       </li>
       <li>
-        <a href="ajout.html" class="waves-effect waves-blue sz"
+        <a href="add/step1.html" class="waves-effect waves-blue sz"
           >Ajout de Client</a
         >
       </li>
@@ -109,7 +109,13 @@
         <div class="col xl1 l1 m1"></div>
         <div class="col xl10 l10 m10 s12">
           <div class="row">
-            <form action="#" method="post" id="dep1" style="display: none" class="center-align">
+            <form
+              action="#"
+              method="post"
+              id="dep1"
+              style="display: none"
+              class="center-align"
+            >
               <div class="input-field col xl6 l6 m6 s12">
                 <input id="last_name" type="text" class="validate" />
                 <label for="last_name">Nom</label>
@@ -153,11 +159,23 @@
                 <label for="last_name">Montant à Déposer</label>
               </div>
               <br />
-              <button type="submit" class="btn light-blue darken-4" name="submit">
-                Normaliser
-              </button>
+              <div class="col l12">
+                <button
+                  type="submit"
+                  class="btn light-blue darken-4"
+                  name="submit"
+                >
+                  Normaliser
+                </button>
+              </div>
             </form>
-            <form action="#" method="post" id="dep2" style="display: none" class="center-align">
+            <form
+              action="#"
+              method="post"
+              id="dep2"
+              style="display: none"
+              class="center-align"
+            >
               <div class="input-field col xl6 l6 m6 s12">
                 <input id="nom" type="text" class="validate" />
                 <label for="nom">Nom</label>
@@ -207,12 +225,18 @@
                   class="validate"
                   placeholder="xxxxx xxxxx xxxxx xxxxx xxxxx"
                 />
-                <label for="montant">Montant à Débiter</label>
+                <label for="montant">Montant à Transférer</label>
               </div>
               <br />
-              <button type="submit" class="btn light-blue darken-4" name="submit">
-                Normaliser
-              </button>
+              <div class="col l12">
+                <button
+                  type="submit"
+                  class="btn light-blue darken-4"
+                  name="submit"
+                >
+                  Normaliser
+                </button>
+              </div>
             </form>
           </div>
         </div>

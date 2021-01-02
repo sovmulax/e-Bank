@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-body{
+body {
   background-color: #f5fcff;
 }
 
@@ -153,6 +153,12 @@ thead {
   color: #9e9e9e;
 }
 
+.titres {
+  font-style: italic;
+  font-size: larger !important;
+  color: gray;
+}
+
 .mx1 {
   margin: 1rem !important;
 }
@@ -184,22 +190,22 @@ thead {
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.ps-petit{
+.ps-petit {
   height: 25rem;
   width: 16rem;
   margin: 1rem !important;
 }
 
-.colors{
+.colors {
   color: #000 !important;
   font-weight: 600 !important;
 }
 
-.ps-pad{
+.ps-pad {
   padding: 5% !important;
 }
 
-.inline{
+.inline {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -212,6 +218,28 @@ thead {
 .input-field:focus {
   border-bottom: 1px solid #000 !important;
   box-shadow: 0 1px 0 0 #000 !important;
+}
+
+/* style des steps */
+
+.st {
+  margin: 1rem;
+  font-weight: 600;
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.step {
+  display: flex;
+  justify-content: center;
+}
+
+.actives {
+  background-color: #01579b !important;
+}
+
+.actives:hover{
+  color: white !important;
 }
 
 /* Média query */
