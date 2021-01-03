@@ -19,9 +19,7 @@
   <body>
     <nav class="light-blue darken-4 sze">
       <div class="nav-wrapper ps-nav">
-        <a href="index.html" class="brand-logo ps-titles"
-          >Virtual Bank</a
-        >
+        <a href="index.html" class="brand-logo ps-titles">Virtual Bank</a>
         <a href="#" class="sidenav-trigger" data-target="mobile-menu"
           ><i class="material-icons">menu</i></a
         >
@@ -67,24 +65,36 @@
     <div class="row white">
       <div class="col l2"></div>
       <div class="col l8 m12 s12">
-        <div class= "white center-align">
+        <div class="white center-align">
           <form>
             <label>
               <input
-                type="checkbox"
-                name="check"
-                class="filled-in"
-                id="retrait"
+                class="with-gap light-blue darken-4"
+                name="group1"
+                type="radio"
+                id="depot"
                 onclick="cacher()"
               />
               <span class="mx1">Retrait</span>
             </label>
             <label>
-              <input type="checkbox" name="check" class="filled-in" id="envoie" onclick="cacher0()"/>
+              <input
+                class="with-gap light-blue darken-4"
+                name="group1"
+                type="radio"
+                id="envoie"
+                onclick="cacher0()"
+              />
               <span class="mx1">Envoie</span>
             </label>
             <label>
-              <input type="checkbox" name="check" class="filled-in" id="depot" onclick="cacher1()"/>
+              <input
+                class="with-gap light-blue darken-4"
+                name="group1"
+                type="radio"
+                id="retrait"
+                onclick="cacher1()"
+              />
               <span class="mx1">Depot</span>
             </label>
           </form>
@@ -93,7 +103,7 @@
         <div class="container">
           <div class="row">
             <!--Retrait-->
-            <div class="col my" id="l1" style="display: none;">
+            <div class="col my" id="l1" style="display: none">
               <table class="centered">
                 <thead class="light-blue darken-4">
                   <tr>
@@ -114,7 +124,7 @@
               </table>
             </div>
             <!--Dépôt-->
-            <div class="col my" id="l3" style="display: none;">
+            <div class="col my" id="l3" style="display: none">
               <table class="centered">
                 <thead class="light-blue darken-4">
                   <tr>
@@ -135,7 +145,7 @@
               </table>
             </div>
             <!--Envoie-->
-            <div class="col my" id="l2" style="display: none;">
+            <div class="col my" id="l2" style="display: none">
               <table class="centered">
                 <thead class="light-blue darken-4">
                   <tr>
@@ -212,5 +222,40 @@
         l3.onClick = licence3.style.display = "block";
       }
     </script>
+    <footer class="page page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Virtual Bank</h5>
+            <p class="grey-text text-lighten-4">
+              Virtual Bank est une banque virtuelle qui basé en Côte d'Ivoire
+              utilise les carte Visa et Mastercard afin de permettre a ses
+              client la facilité d'éffectuer des achats en ligne et des
+              transfert d'agent de client à client.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">CONTACTEZ-NOUS</h5>
+            <div class="row">
+              <div class="col"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <p>
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All rights reserved
+          </p>
+          <a class="grey-text text-lighten-4 right" href="#!"
+            >Termes et Conditions</a
+          >
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

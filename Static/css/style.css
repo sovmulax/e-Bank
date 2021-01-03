@@ -207,7 +207,7 @@ thead {
 
 .inline {
   display: flex;
-  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -240,6 +240,15 @@ thead {
 
 .actives:hover{
   color: white !important;
+}
+
+.page{
+  background-image: url(../images/res/footer-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  bottom: 0;
 }
 
 /* Média query */

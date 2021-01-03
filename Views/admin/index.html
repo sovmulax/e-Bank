@@ -83,11 +83,11 @@
     </div>
     <div class="divider"></div>
     <div class="row">
-      <div class="col xl1 l1 "></div>
+      <div class="col xl1 l1"></div>
       <div class="col xl10 l10 m12 s12">
         <div class="row">
           <div class="input-field col s12">
-            <input id="idSearch" type="email" class="validate">
+            <input id="idSearch" type="email" class="validate" />
             <label for="idSearch">Rechercher</label>
           </div>
         </div>
@@ -123,7 +123,7 @@
           <div class="col card ps-petit hoverable">
             <div class="card-image">
               <img src="../../Static/images/clients/img_avatar.png" />
-              <h5 class="card-title colors flow-text"> GEOFFROY </h5>
+              <h5 class="card-title colors flow-text">GEOFFROY</h5>
               <a
                 class="btn-floating halfway-fab waves-effect waves-light light-blue darken-4"
                 ><i class="material-icons">add</i></a
@@ -158,15 +158,52 @@
         });
       </script>
       <script>
-        $(document).ready(function(){
-           $("#idSearch").on("keyup", function() {
-              var value = $(this).val().toLowerCase();
-              $("#clients .col").filter(function() {
-                 $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-              });
-           });
+        $(document).ready(function () {
+          $("#idSearch").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#clients .col").filter(function () {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+            });
+          });
         });
-     </script>
+      </script>
     </div>
+    <footer class="page page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Virtual Bank</h5>
+            <p class="grey-text text-lighten-4">
+              Virtual Bank est une banque virtuelle qui basé en Côte d'Ivoire
+              utilise les carte Visa et Mastercard afin de permettre a ses
+              client la facilité d'éffectuer des achats en ligne et des
+              transfert d'agent de client à client.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">CONTACTEZ-NOUS</h5>
+            <div class="row">
+              <div class="col">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <p>
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All rights reserved
+          </p>
+          <a class="grey-text text-lighten-4 right" href="#!"
+            >Termes et Conditions</a
+          >
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
