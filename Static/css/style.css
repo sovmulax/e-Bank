@@ -247,7 +247,18 @@ thead {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  width: 100%;
   position: relative;
+  bottom: 0;
+}
+
+.pages{
+  background-image: url(../images/res/footer-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  position: absolute;
   bottom: 0;
 }
 
