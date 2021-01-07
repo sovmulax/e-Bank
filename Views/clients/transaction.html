@@ -80,7 +80,7 @@
           /><br />
           <input type="number" name="cvv" placeholder="Code CVV" /><br />
           <input type="number" name="code" placeholder="Code Secret" /><br />
-          <button type="submit" class="btn button">Envoyez</button>
+          <button type="submit" class="btn button light-blue darken-4">Envoyez</button>
         </form>
       </div>
       <div class="col l3 m2 cyan lighten-5"></div>
@@ -107,9 +107,17 @@
           <div class="col l4 offset-l2 s12">
             <h5 class="white-text">CONTACTEZ-NOUS</h5>
             <div class="row">
-              <div class="col">
-                
-              </div>
+              <form action="#" method="post" class="center-align">
+                <div class="input-field ps-field col s12">
+                  <input id="email" type="email" class="validate ps-field white-text">
+                  <label for="email" class="white-text">Email</label>
+                </div>
+                <div class="input-field ps-field col s12">
+                  <textarea id="textarea1" class="materialize-textarea ps-field white-text"></textarea>
+                  <label for="textarea1">Message</label>
+                </div>
+                <button type="submit" class="btn light-blue darken-4" name="contact">Envoyez</button>
+              </form>
             </div>
           </div>
         </div>
